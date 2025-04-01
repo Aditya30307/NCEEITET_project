@@ -1,0 +1,10 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.nav{
+    width:30vw;
+    background-color: rgb(148, 148, 148);
+    list-style: none;
+    height: 100vh;
+}
