@@ -86,3 +86,12 @@ body{
   background-color: aliceblue;
 }
 
+.result:hover{
+    box-shadow: 0.3em 0.3em black;
+    cursor:pointer;
+}
+.heading{
+    margin-top: 3em;
+    margin-left:14em;
+}
+

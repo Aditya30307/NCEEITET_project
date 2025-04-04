@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modification = 2;
     const cleaning = 3;
     let count = 0;
-    function removeElement(params) {
+    function removeElement() {
       while (lower[0].firstChild){
         lower[0].removeChild(lower[0].firstChild);
       }
@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 lower[0].append(result);
                 
               }
+            }
+            else{
+              removeElement();
+              const noResult = document.createElement("h3");
+              noResult.classList.add("heading");
+              noResult.innerText = "No search result try searching for something else";
+              lower[0].append(noResult);
             }
           }
           else if (e.key == "Backspace" && search[0].value.length <= 1){
