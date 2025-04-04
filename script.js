@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const service = 3;
     const modification = 2;
     const cleaning = 3;
+    const paint = 2;
     let count = 0;
     function removeElement(params) {
       while (lower[0].firstChild){
