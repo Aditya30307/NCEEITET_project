@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const wheels = 2;
     const service = 3;
     const modification = 2;
+    const cleaning = 3;
     let count = 0;
     function removeElement(params) {
       while (lower[0].firstChild){
@@ -34,8 +35,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 
               }
             }
+            else if (searchChanged == "cleaning"){
+              removeElement();
+              for (let i = 0; i < cleaning; i++) {
+                const result = document.createElement("div");
+                result.classList.add("result");
+                result.innerText = "cleaning";
+                lower[0].append(result);
+                
+              }
+            }
+            else if (searchChanged == "modification"){
+              removeElement();
+              for (let i = 0; i < modification; i++) {
+                const result = document.createElement("div");
+                result.classList.add("result");
+                result.innerText = "modification";
+                lower[0].append(result);
+                
+              }
+            }
           }
-          else if (e.key == "Backspace" && search[0].value.length == 1){
+          else if (e.key == "Backspace" && search[0].value.length <= 1){
             count = 0;
             console.log(count);
           }
