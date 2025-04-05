@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const search = document.getElementsByClassName('search');
     const lower = document.getElementsByClassName("lower");
     const clear = document.getElementsByClassName("clear");
+    const vehicle = document.querySelector(".selection");
     const wheels = 2;
     const service = 3;
     const modification = 2;
     const cleaning = 3;
     let count = 0;
+    // console.log(vehicle.value);
     function removeElement() {
       while (lower[0].firstChild){
         lower[0].removeChild(lower[0].firstChild);
@@ -29,14 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 lower[0].append(result);
               }
             }
-            else if (searchChanged == "service"){
+            else if (searchChanged == "service" || searchChanged == "servicing"){
               removeElement();
               for (let i = 0; i < service; i++) {
                 const result = document.createElement("div");
                 result.classList.add("result");
                 result.innerText = "service";
                 lower[0].append(result);
-                
               }
             }
             else if (searchChanged == "cleaning"){
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
               removeElement();
               const noResult = document.createElement("h3");
               noResult.classList.add("heading");
-              noResult.innerText = "No search result try searching for something else";
+              noResult.innerText = `No search results for "${search[0].value}" try searching for something else`;
               lower[0].append(noResult);
             }
           }

@@ -40,6 +40,7 @@ body{
  .profile:hover{
     background-color: #34495e;
     cursor: pointer;
+    /* color: #7a8a99; */
  }
 .profile:nth-child(odd){
     border-top: 2px solid #faf9f6;  /*#faf9f6 */
@@ -57,6 +58,33 @@ body{
     white-space: normal;
     text-overflow: ellipsis;
 }
+.selection{
+  margin-left: 6em;
+  width: 7vw;
+  color: white;
+  background-color: #1f2a36;
+  border:none;
+}
+.carInfo1{
+    width: 8vw;
+    margin-left: 6em;
+    background-color: #1f2a36;
+    border:none;
+    color: white;
+    padding-left: 1em;
+    overflow: hidden;
+}
+.carInfo2{
+    width: 8vw;
+    margin-left: 5.3em;
+    background-color: #1f2a36;
+    border:none;
+    color: white;
+    padding-left: 1em;
+    overflow: hidden;
+}
+
+
 /* code for app section */
 .app{
     width:80vw;
