@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modification = 2;
     const cleaning = 3;
     let count = 0;
-    // console.log(vehicle.value);
     function removeElement() {
       while (lower[0].firstChild){
         lower[0].removeChild(lower[0].firstChild);
