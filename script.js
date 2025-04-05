@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const search = document.getElementsByClassName('search');
     const lower = document.getElementsByClassName("lower");
+    const clear = document.getElementsByClassName("clear");
     const wheels = 2;
     const service = 3;
     const modification = 2;
@@ -11,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         lower[0].removeChild(lower[0].firstChild);
       }
     }
-
+    clear[0].addEventListener("click", ()=>{
+      count = 0;
+      search[0].value = "";
+    })
     search[0].addEventListener('keydown', (e) => {
           if (e.key ===  "Enter" && count == 0){
             let searchChanged = search[0].value.toLowerCase();
@@ -63,9 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
               lower[0].append(noResult);
             }
           }
-          else if (e.key == "Backspace" && search[0].value.length <= 1){
-            count = 0;
-            console.log(count);
+          else if (e.key == "Backspace" ){
+            // count = 0;
+            // console.log(count);
+            console.log(e);
+            if(search[0].value.length == 0){
+              count = 0;
+              console.log(count);
+            }
           }
     });
 });

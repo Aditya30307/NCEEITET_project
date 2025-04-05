@@ -78,7 +78,7 @@ body{
 }
 .logo{
     width: 6em;
-    margin-left: 10em;
+    margin-left: 6em;
     margin-top: 1em;
     border-radius: 8em;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
@@ -117,4 +117,15 @@ body{
 .search:focus{
     border-color: #1abc9c;
     box-shadow: 0 0 5px rgba(26, 188, 156, 01.5em);
+}
+.clear{
+    margin-top: 3.4em;
+    margin-left: 0.1em;
+    color: #626262;
+    height:1em;
+    padding-left: 0.2em;
+}
+.clear:hover{
+    cursor:pointer;
+    color:#2d2d2d;
 }
