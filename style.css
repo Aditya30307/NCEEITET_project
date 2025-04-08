@@ -65,6 +65,9 @@ body{
   background-color: #1f2a36;
   border:none;
 }
+.selection:hover{
+    cursor: pointer;
+}
 .carInfo1{
     width: 8vw;
     margin-left: 6em;
