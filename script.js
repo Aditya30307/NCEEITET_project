@@ -51,9 +51,9 @@ function stationName(elem, name){
             let searchChanged = search[0].value.toLowerCase();
             if (searchChanged == "wheels") {
               count++;
-              card++;
               removeElement();
               for(let i = 0; i < wheels;i++) {
+                card++;
                 const result = document.createElement("div");
                 result.classList.add("card");
                 lower[0].append(result);
