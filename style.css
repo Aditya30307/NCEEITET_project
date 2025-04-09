@@ -160,3 +160,64 @@ body{
     cursor:pointer;
     color:#2d2d2d;
 }
+
+/* remove this */
+
+.card{
+    width: 50vw;
+    height: 18vh;
+    margin: auto;
+    border: 2px solid #d0d7de;
+    border-radius: 1em;
+    margin-top: 3em;
+}
+.info{
+    display:flex;
+    /* border-bottom: 2px solid black;
+    border:2px solid black; */
+    align-items: center;
+}
+.info1{
+    height:8vh;
+    /* border-bottom: 2px solid #d0d7de */
+    margin-left: 1em;
+}
+
+.info2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 9vh;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-top:  2px solid #d0d7de;;
+    /* border:2px solid black; */
+
+}
+
+.resultName{
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+
+}
+.overflow{
+    overflow:wrap ;
+}
+.booking{
+    background-color: #1abc9c;
+    display: flex;
+    height: 2em;
+    align-items: center;
+    width: 6em;
+    justify-content: center;
+    border-radius: 1em;
+    color: #ffffff;
+
+}
+.card:hover{
+    box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.2s ease   ;
+    cursor:pointer;
+}
