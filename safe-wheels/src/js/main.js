@@ -37,7 +37,7 @@ function init() {
 
     // Load 3D model
     const loader = new GLTFLoader();
-    loader.load('/models/carUpdated.glb', function (gltf) {
+    loader.load('/public/models/carUpdated.glb', function (gltf) {
         console.log('Model loaded successfully:', gltf);  // Log model data
         model = gltf.scene;
         model.scale.set(1.2, 1.2, 1.2); // Scale the model to its actual size
