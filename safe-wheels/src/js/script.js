@@ -4,7 +4,8 @@ export function logic() {
     const lower = document.getElementsByClassName("lower");
     const clear = document.getElementsByClassName("clear");
     const vehicle = document.querySelector(".selection");
-    let name = document.getElementById("usinglocal")
+    let name = document.getElementById("usinglocal");
+    const sign = document.getElementById("sign");
     let card =0;
     const wheels = 2;
     const service = 3;
@@ -17,7 +18,10 @@ export function logic() {
     if (name1) {
       document.getElementById("usinglocal").innerText = name1;
     }
+    if (document.getElementById("usinglocal").innerText != "User"){
+      sign.style.display ="none"
 
+    }
     function removeElement() {
       while (lower[0].firstChild){
         lower[0].removeChild(lower[0].firstChild);
