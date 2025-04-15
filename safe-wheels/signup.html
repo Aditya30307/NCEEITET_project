@@ -76,6 +76,7 @@ body::before {
 
         btn[0].addEventListener("click",()=>{
             let name = localStorage.setItem("username", arr[0].value);
+            localStorage.setItem("Email", arr[1].value);
 
             window.location.href = ("./index.html")
         })

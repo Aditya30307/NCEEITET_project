@@ -49,6 +49,12 @@ function book(elem){
   booking.innerText = "Book now"
   elem.append(booking);
 
+  booking.addEventListener("click", ()=>{
+    let parent = booking.parentElement.parentElement.firstChild
+    localStorage.setItem("StName", parent.innerText);
+    window.location.href = "/booking.html"
+  })
+
 }
 function stationName(elem, name){
   elem.innerText = name;
@@ -178,4 +184,5 @@ function stationName(elem, name){
             }
           }
     });
+    
 };
