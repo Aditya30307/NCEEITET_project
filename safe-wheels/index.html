@@ -6,13 +6,12 @@
     <title>SAFE WHEELS</title>
     <link rel="stylesheet" href="/src/style.css">
 </head>
-<!-- <script src="/src/js/script.js"></script> -->
-<script src="/src/js/main.js" type = "module"></script>
+<!-- <script src="./src/js/script.js"></script> -->
 <body>
     <div class="main">
         <div class="nav">
-            <img class="pic" src="./public/pic.png" alt="">
-            <div class="name">Aditya Sajgotra</div>
+            <img class="pic" src="/pic.png" alt="">
+            <div class="name" id = "usinglocal">User</div>
             <div class="profile">Vehicle
                 <select class="selection" placeholder="Choose vehicle type">
                     <option value="" class="options" disabled selected>Select a Vehicle</option>
@@ -34,17 +33,18 @@
             
         </div>
         <div class="app">
-                <div class="upper">
-                    <input type="text" class="search" placeholder="Search">
-                    <span class="clear">clear</span>
-                    <img src="./public/logo.jpg" alt="" class="logo">
+            <div class="upper">
+                <input type="text" class="search" placeholder="Search">
+                <span class="clear">clear</span>
+                <img src="/logo.jpg" alt="" class="logo">
+            </div>
+            <div class="lower">
+                <div class="guide">
+                    <h3 class="heading">Try searching to get service station recommendations</h3>
                 </div>
-                <div class="lower">
-                    <div class="guide">
-                        <h3 class="heading">Try searching to get service station recommendations</h3>
-                    </div>
-                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="./src/js/combine.js" type = "module"></script>
 </html>

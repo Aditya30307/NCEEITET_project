@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+export function logic() {
+  
     const search = document.getElementsByClassName('search');
     const lower = document.getElementsByClassName("lower");
     const clear = document.getElementsByClassName("clear");
     const vehicle = document.querySelector(".selection");
+    let name = document.getElementById("usinglocal")
     let card =0;
     const wheels = 2;
     const service = 3;
@@ -10,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const cleaning = 3;
     let count = 0;
     let stationNames = [0,"PITSTOP", "AUTOHUB", "XYZ"];
+
+    const name1 = localStorage.getItem("username");
+    if (name1) {
+      document.getElementById("usinglocal").innerText = name1;
+    }
+
     function removeElement() {
       while (lower[0].firstChild){
         lower[0].removeChild(lower[0].firstChild);
@@ -166,4 +174,4 @@ function stationName(elem, name){
             }
           }
     });
-});
+};
